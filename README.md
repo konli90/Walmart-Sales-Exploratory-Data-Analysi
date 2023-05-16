@@ -1,6 +1,6 @@
 Weekly Viral Load Data Analysis
 
-This repository contains scripts and resources for analyzing Viral Load data collected from multiple molecular labs and hub labs in Malawi. The data is collected by data clerks using mobile devices through platforms like ODK or Kobo Collect. The collected data is then pushed to the central server of KoboToolbox. The analysis of the data is performed using R, where an ETL process is employed to extract data from KoboToolbox, manipulate and aggregate it, and then push it to Power BI for visualization.
+This repository contains scripts and resources for analyzing Viral Load data collected from multiple molecular labs and hub labs in Malawi. The data is collected by data clerks using mobile devices through platforms like ODK or Kobo Collect. The collected data is then pushed to the central server of KoboToolbox every Friday by 12pm. The analysis of the data is performed using R, where an ETL process is employed to extract data from KoboToolbox, manipulate and aggregate it, and then push it to Power BI for visualization.
 Table of Contents
 
     Data Collection
@@ -13,7 +13,7 @@ Table of Contents
 
 Data Collection
 
-The data for Viral Load analysis is collected from various molecular labs and hub labs in Malawi. Data clerks are responsible for collecting the data using mobile devices, employing data collection platforms such as ODK or Kobo Collect. The collected data is then pushed to the central server of KoboToolbox. The data includes relevant information such as patient demographics, viral load test results, lab information, and other related attributes.
+The data for Viral Load analysis is collected from various molecular labs and hub labs in Malawi. Data clerks are responsible for collecting the data using mobile devices, employing data collection platforms such as ODK or Kobo Collect. The collected data is then pushed to the central server of KoboToolbox every Friday by 12pm. The data includes relevant information such as patient demographics, viral load test results, lab information, and other related attributes.
 Data Analysis
 
 The data analysis is performed using the R programming language. The analysis aims to extract valuable insights and patterns from the collected Viral Load data. This may involve various statistical techniques, data manipulation, aggregation, and visualization.
@@ -21,7 +21,7 @@ Setup
 
 To set up the environment for data analysis, follow these steps:
 
-    Clone the repository: https://github.com/konli90/Weekly-VL-analysis.git
+    Clone the repository: git clone https://github.com/konli90/Weekly-VL-analysis.git
     Install the required dependencies. You can use the provided requirements.txt file to install the necessary packages: pip install -r requirements.txt
     Configure access to KoboToolbox API by providing the necessary credentials or API keys.
     Configure access to the Power BI service by providing the required credentials or API keys.
@@ -51,4 +51,4 @@ To visualize the data in Power BI:
 
 Contributing
 
-Contributions to this project are welcome. If you have any suggestions, improvements, or bug fixes, please submit a pull request. Ensure that your contributions
+Contributions to this project are welcome. If you have any suggestions, improvements, or bug
